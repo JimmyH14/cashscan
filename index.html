@@ -765,7 +765,7 @@ Si aucune offre connue, mets un tableau offers vide mais donne quand même les i
 
     const response = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", "x-api-key": "T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", "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true" },
       body: JSON.stringify({
         model: "claude-sonnet-4-20250514",
         max_tokens: 1000,
